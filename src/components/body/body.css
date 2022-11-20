@@ -1,0 +1,31 @@
+main{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 88px auto auto auto;
+    width: 920px;
+    gap: 15px;
+}
+
+.leftPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 614px;
+}
+
+.righPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 300px;
+}
+  
+  @media (max-width: 935px) {
+    .leftPage{
+        margin-left: auto;
+        margin-right: auto;
+    }
+  } 

@@ -1,0 +1,72 @@
+.sugestion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 11px;
+}
+
+.sugestionForYou {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8E8E;
+}
+
+.seeAll {
+    font-size: 12px;
+    font-weight: 500;
+    color: #262626;
+
+}
+
+.sugestionUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sugestionContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.sugestionTitle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+.sugestionUser img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.titleName {
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.titleName a{
+    color: #262626;
+}
+
+.isFollow {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8E8E8E;
+}
+
+.follow {
+    font-size: 12px;
+    font-weight: 500;
+    color: #139EF2;
+}
+
+
+@media (max-width: 935px) {
+    .sideBar {
+        display: none;
+    }
+} 

@@ -1,0 +1,52 @@
+
+.user {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+} 
+.user img {
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    margin-right: 17px;
+}
+
+.user img:hover{
+    cursor: pointer;
+}
+
+.userText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.userTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.userSubTitle {
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8E8E8E;
+    align-items: center;
+}
+
+.userSubTitle ion-icon {
+    font-size: 16px;
+}
+
+.userSubTitle ion-icon:hover {
+    cursor: pointer;
+}
+
+.userTitle a {
+    color: #262626;
+}
