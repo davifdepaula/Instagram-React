@@ -22,7 +22,7 @@ function Posts(props) {
 
   return (
     <div className="posts">
-      <div className="postsContainer">
+      <div className="postsContainer" data-test="post">
         <div className="top">
           <div className="container">
             <div className="userImg">
@@ -36,6 +36,7 @@ function Posts(props) {
         </div>
         <div className="mid">
           <img
+            data-test="post-image"
             src={postImg}
             onClick={() =>
               !liked
@@ -48,7 +49,9 @@ function Posts(props) {
         <div className="bottom">
           <div className="icones">
             <div className="leftIcones">
-              <span onClick={showLiked}>
+              <span
+                data-test="like-post"
+                onClick={showLiked}>
                 {liked ? (
                   <span className="heart"><ion-icon name="heart"></ion-icon></span>
                 ) : (
@@ -60,7 +63,9 @@ function Posts(props) {
             </div>
 
             <div className="rigthIcones">
-              <span onClick={() => (saved ? setSaved(false) : setSaved(true))}>
+              <span
+                data-test="save-post"
+                onClick={() => (saved ? setSaved(false) : setSaved(true))}>
                 {saved ? (
                   <ion-icon name="bookmark"></ion-icon>
                 ) : (
@@ -77,7 +82,7 @@ function Posts(props) {
 
             <div className="likeText">
               Curtido por <span>{likedFor}</span> e{" "}
-              <span>
+              <span data-test="likes-number">
                 {new Intl.NumberFormat("pt-Br").format(
                   likedQuantity + likeControl
                 )}

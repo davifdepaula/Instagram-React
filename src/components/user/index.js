@@ -5,9 +5,11 @@ function User() {
   const [userName, setUserName] = useState("Davi Ferreira")
   const [userImg, setUserImg] = useState("/assets/eu.jpeg")
   return (
-    <div className="user">
+    <div className="user" data-test="user">
       <div className="userImg">
-        <img src={userImg}
+        <img 
+        data-test="profile-image" 
+        src={userImg}
         onClick = {() => setUserImg(prompt("digite o endereço da nova imagem de perfil: "))}
         />
       </div>
@@ -18,8 +20,8 @@ function User() {
         </div>
 
         <div className="userSubTitle">
-            {userName} 
-            <span onClick={() => {setUserName(prompt("Digite o novo nome de usuario"))}}> 
+            <span data-test="name">{userName}</span> 
+            <span data-test="edit-name" onClick={() => {setUserName(prompt("Digite o novo nome de usuario"))}}> 
               <ion-icon name="pencil-outline"></ion-icon> 
             </span>
         </div>
