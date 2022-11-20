@@ -18,7 +18,12 @@ function Posts(props) {
         }
     }
 
-    function likeIme() {}
+    function onclickImg(){
+      if(!liked){
+        setLikeControl(likeControl + 1)
+        setLiked(true)
+      }
+    }
 
   return (
     <div className="posts">
@@ -38,11 +43,7 @@ function Posts(props) {
           <img
             data-test="post-image"
             src={postImg}
-            onClick={() =>
-              !liked
-                ? setLiked(true) && setLikeControl(likeControl + 1)
-                : null
-            }
+            onClick={() => onclickImg()}
           />
         </div>
 
