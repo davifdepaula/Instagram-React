@@ -25,6 +25,10 @@ function Posts(props) {
       }
     }
 
+    function savePost(){
+      saved ? setSaved(false) : setSaved(true)
+    }
+
   return (
     <div className="posts">
       <div className="postsContainer" data-test="post">
@@ -66,7 +70,7 @@ function Posts(props) {
             <div className="rigthIcones">
               <span
                 data-test="save-post"
-                onClick={() => (saved ? setSaved(false) : setSaved(true))}>
+                onClick={() => savePost()}>
                 {saved ? (
                   <ion-icon name="bookmark"></ion-icon>
                 ) : (

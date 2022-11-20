@@ -4,13 +4,23 @@ import "./user.css"
 function User() {
   const [userName, setUserName] = useState("Davi Ferreira")
   const [userImg, setUserImg] = useState("/assets/eu.jpeg")
+
+  function changeUserImg(){
+    const newImg = prompt("digite o endereço da nova imagem de perfil: ")
+    if(newImg) setUserImg(newImg)
+  }
+
+  function changeUserName(){
+    const newName = prompt("digite o endereço da nova imagem de perfil: ")
+    if(newName) setUserName(newName)
+  }
   return (
     <div className="user" data-test="user">
       <div className="userImg">
         <img 
         data-test="profile-image" 
         src={userImg}
-        onClick = {() => setUserImg(prompt("digite o endereço da nova imagem de perfil: "))}
+        onClick = {() => changeUserImg()}
         />
       </div>
       
@@ -21,7 +31,7 @@ function User() {
 
         <div className="userSubTitle">
             <span data-test="name">{userName}</span> 
-            <span data-test="edit-name" onClick={() => {setUserName(prompt("Digite o novo nome de usuario"))}}> 
+            <span data-test="edit-name" onClick={() => changeUserName()}> 
               <ion-icon name="pencil-outline"></ion-icon> 
             </span>
         </div>
