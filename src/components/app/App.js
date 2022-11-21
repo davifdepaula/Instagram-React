@@ -1,8 +1,6 @@
 import Body from '../body';
+import Footer from '../footer';
 import Navbar from '../navbar';
-import Posts from '../posts';
-import Stories from '../stories';
-import Sugestions from '../sugestions';
 import './App.css';
 
 function App() {
@@ -10,7 +8,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Body /> 
-
+      <Footer/>
     </div>
   );
 }

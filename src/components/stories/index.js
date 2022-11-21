@@ -60,9 +60,11 @@ function Stories() {
     <div className="stories">
         {storiesUser.map((storie, index) => {
             return (
-                <div key= {index} className="storiesContainer">
+                <div key= {index} className="storiesContainer"> {/*story*/}
                     <div className="imgContainer">
-                        <div className="storiesCircle"> <img className="storiesImg" src= {storie.image} /> </div>
+                        <div className="storiesCircle"> 
+                            <img src= {storie.image} /> 
+                        </div>
                     </div>
 
                     <div className="textContainer">

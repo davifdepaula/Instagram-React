@@ -1,7 +1,7 @@
 import React from 'react'
 import User from '../user'
 import Sugestions from '../sugestions'
-import Footer from '../footer'
+import FooterSideBar from '../footerSideBar'
 import "./sidebar.css"
 
 const sugestionsContainer = [
@@ -63,7 +63,7 @@ function SideBar() {
             )
         })}
 
-        <Footer/>
+        <FooterSideBar/>
         
     </aside>
   )

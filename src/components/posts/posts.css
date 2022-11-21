@@ -83,3 +83,19 @@
 .heart{
     color: red;
 }
+
+
+@media (max-width: 614px) {
+    .posts {
+        width: 100vw;
+    }
+
+    .mid{
+        width: 100%;
+    }
+
+    .mid img {
+        width: 100%;
+    }
+
+}

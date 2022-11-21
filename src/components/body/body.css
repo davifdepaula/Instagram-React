@@ -29,3 +29,10 @@ main{
         margin-right: auto;
     }
   } 
+
+  @media (max-width: 614px) {
+    main{
+        width: 100%;
+    }
+
+}

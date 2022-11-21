@@ -3,7 +3,6 @@ import Stories from '../stories'
 import Posts from '../posts'
 import User from '../user'
 import Sugestions from '../sugestions'
-import Footer from '../footer'
 
 import "./body.css"
 import SideBar from '../sidebar'

@@ -56,7 +56,6 @@ ion-icon {
 }
 
 
-
 @media (min-width: 615px){
     .headerContainerMobile{
         display: none;
@@ -69,6 +68,6 @@ ion-icon {
     }
 
     .headerContainerMobile{
-        width: 100%;
+        width: 100vw;
     }
 }
