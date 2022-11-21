@@ -26,7 +26,8 @@ function Posts(props) {
     }
 
     function savePost(){
-      saved ? setSaved(false) : setSaved(true)
+      if (saved) setSaved(false)
+      else setSaved(true)
     }
 
   return (
