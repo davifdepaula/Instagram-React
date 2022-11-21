@@ -2,34 +2,35 @@ import React from 'react'
 import User from '../user'
 import Sugestions from '../sugestions'
 import Footer from '../footer'
+import "./sidebar.css"
 
 const sugestionsContainer = [
     {   
-        image: "/asset/novaesperanca.jpg",
+        image: "/assets/novaesperanca.jpg",
         userName: "Star Wars",
         isFollow: "Segue Você"
     },
 
     {   
-        image: "/asset/hamsolo.jpg",
+        image: "/assets/hamsolo.jpg",
         userName: "Ham Solo",
         isFollow: "Segue Você"
     },
 
     {   
-        image: "/asset/chewbaka.jpg",
+        image: "/assets/chewbaka.jpg",
         userName: "Chewbacca",
         isFollow: "Segue Você"
     },
 
     {   
-        image: "/asset/palpatine.jpg",
+        image: "/assets/palpatine.jpg",
         userName: "Palpatine",
         isFollow: "Segue Você"
     },
 
     {   
-        image: "/asset/Cal-Kestis.jpg",
+        image: "/assets/Cal-Kestis.jpg",
         userName: "Cal Kestis",
         isFollow: "Segue Você"
     }

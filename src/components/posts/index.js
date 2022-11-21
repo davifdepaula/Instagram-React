@@ -47,7 +47,7 @@ function Posts(props) {
           <img
             data-test="post-image"
             src={postImg}
-            onClick={() => onclickImg()}
+            onDoubleClick={() => onclickImg()}
           />
         </div>
 

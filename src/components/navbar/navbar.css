@@ -69,6 +69,6 @@ ion-icon {
     }
 
     .headerContainerMobile{
-        width: 612px;
+        width: 100%;
     }
 }
